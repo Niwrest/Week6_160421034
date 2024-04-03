@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/studentLisFragment">
+
+    <fragment
+        android:id="@+id/studentLisFragment"
+        android:name="com.ubayadef.advweek6_160421034.view.StudentLisFragment"
+        android:label="fragment_student_lis"
+        tools:layout="@layout/fragment_student_lis" >
+        <action
+            android:id="@+id/actionStudentDetail"
+            app:destination="@id/studentDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentDetailFragment"
+        android:name="com.ubayadef.advweek6_160421034.view.StudentDetailFragment"
+        android:label="fragment_student_detail"
+        tools:layout="@layout/fragment_student_detail" />
+</navigation>
